@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+body.login {
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #3a7bd5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.login-card h2 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.login-card p {
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 12px;
+    background: #3a7bd5;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.container {
+    display: flex;
+}
+
+
+.sidebar {
+    width: 230px;
+    background: #1e3c72;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: #3a7bd5;
+}
+
+
+.main {
+    flex: 1;
+    background: #f4f7fb;
+    padding: 30px;
+}
+
+.main h1 {
+    margin-bottom: 20px;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.form-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    background: #3a7bd5;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.login-card img {
+    width: 70px;
+    display: block;
+    margin:0 auto 15px;
+}
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background: #1e3c72;
+    color: white;
+    position: fixed;
+    padding: 20px;
+}
+
+.main {
+    margin-left: 230px;
+    padding: 20px;
+}
