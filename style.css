@@ -15,7 +15,7 @@ body.login {
 }
 
 .login-card {
-    background: #fff;
+    background: #ffffff;
     padding: 40px;
     border-radius: 15px;
     width: 320px;
@@ -24,7 +24,7 @@ body.login {
 }
 
 .login-card h2 {
-    color: #333;
+    color: #2a2a2a;
     margin-bottom: 5px;
 }
 
@@ -39,6 +39,11 @@ body.login {
     margin: 10px 0;
     border-radius: 8px;
     border: 1px solid #ddd;
+    outline: none;
+}
+
+.login-card input:focus {
+    border-color: #3a7bd5;
 }
 
 .login-card button {
@@ -50,6 +55,11 @@ body.login {
     color: white;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-card button:hover {
+    background: #2a5298;
 }
 
 
@@ -60,7 +70,7 @@ body.login {
 
 .sidebar {
     width: 230px;
-    background: #1e3c72;
+    background: linear-gradient(180deg, #1e3c72, #2a5298);
     color: white;
     height: 100vh;
     padding: 20px;
@@ -68,6 +78,7 @@ body.login {
 
 .sidebar h2 {
     margin-bottom: 30px;
+    font-size: 20px;
 }
 
 .sidebar a {
@@ -81,7 +92,7 @@ body.login {
 }
 
 .sidebar a:hover {
-    background: #3a7bd5;
+    background: rgba(255,255,255,0.2);
 }
 
 
@@ -93,64 +104,87 @@ body.login {
 
 .main h1 {
     margin-bottom: 20px;
+    color: #333;
 }
-
 
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    margin-bottom: 20px;
 }
 
 .card {
     background: white;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
+.card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
 
 .form-box {
     background: white;
-    padding: 20px;
+    padding: 25px;
     border-radius: 12px;
-    max-width: 500px;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
 .form-group {
     margin-bottom: 15px;
 }
 
-input, select {
+label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
     width: 100%;
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
+    outline: none;
 }
 
+input:focus, select:focus, textarea:focus {
+    border-color: #3a7bd5;
+}
 button {
-    padding: 10px;
+    padding: 10px 15px;
     background: #3a7bd5;
     border: none;
     color: white;
     border-radius: 8px;
     cursor: pointer;
-}
-.login-card img {
-    width: 70px;
-    display: block;
-    margin:0 auto 15px;
-}
-.sidebar {
-    width: 200px;
-    height: 100vh;
-    background: #1e3c72;
-    color: white;
-    position: fixed;
-    padding: 20px;
+    transition: 0.3s;
 }
 
-.main {
-    margin-left: 230px;
-    padding: 20px;
+button:hover {
+    background: #2a5298;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    background: #3a7bd5;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+textarea {
+    resize: none;
 }
