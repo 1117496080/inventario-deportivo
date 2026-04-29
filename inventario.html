@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Inventario</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
@@ -11,13 +11,10 @@
 <div class="container">
 
 <div class="sidebar">
-    <h2>Inventario</h2>
-    <a href="dashboard.html">Inicio</a>
-    <a href="inventario.html">Inventario</a>
-    <a href="registrar.html">Registrar Producto</a>
-    <a href="usuarios.html">Usuarios</a>
-    <a href="procesos.html">Procesos</a>
-    <a href="reportes.html">Reportes</a>
+<h2>Inventario</h2>
+<a href="dashboard.html">Inicio</a>
+<a href="inventario.html">Inventario</a>
+<a href="usuario.html">Usuario</a>
 </div>
 
 <div class="main">
@@ -27,25 +24,51 @@
 <div class="card">
 
 <table width="100%" border="1" cellspacing="0" cellpadding="10">
+
 <tr>
 <th>Producto</th>
 <th>Cantidad</th>
 <th>Precio</th>
-<th>Notas</th>
+<th>Acciones</th>
 </tr>
 
 <tr>
 <td><input type="text" value="Balón"></td>
 <td><input type="number" value="10"></td>
 <td><input type="number" value="20"></td>
-<td><input type="text" placeholder="Notas"></td>
+<td>
+<button>Actualizar</button>
+<button>Eliminar</button>
+</td>
 </tr>
 
 <tr>
-<td><input type="text"></td>
-<td><input type="number"></td>
-<td><input type="number"></td>
-<td><input type="text"></td>
+<td><input type="text" value="Camisa"></td>
+<td><input type="number" value="15"></td>
+<td><input type="number" value="30"></td>
+<td>
+<button>Actualizar</button>
+<button>Eliminar</button>
+</td>
+</tr>
+
+<tr>
+<td><input type="text" value="Guayos"></td>
+<td><input type="number" value="8"></td>
+<td><input type="number" value="120"></td>
+<td>
+<button>Actualizar</button>
+<button>Eliminar</button>
+</td>
+</tr>
+
+<tr>
+<td><input type="text" placeholder="Nuevo producto"></td>
+<td><input type="number" placeholder="Cantidad"></td>
+<td><input type="number" placeholder="Precio"></td>
+<td>
+<button>Agregar</button>
+</td>
 </tr>
 
 </table>
