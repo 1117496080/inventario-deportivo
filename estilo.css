@@ -1,0 +1,314 @@
+/* RESET GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY GENERAL */
+body{
+    background:#e6e8eb;
+}
+
+/* LOGIN */
+body.login {
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #3a7bd5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.login-card h2 {
+    color: #2a2a2a;
+    margin-bottom: 5px;
+}
+
+.login-card p {
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.login-card input:focus {
+    border-color: #3a7bd5;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 12px;
+    background: #3a7bd5;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.login-card button:hover {
+    background: #2a5298;
+}
+
+/* ESTRUCTURA GENERAL */
+.container {
+    display: flex;
+}
+
+/* SIDEBAR (ÚNICO) */
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100%;
+    background: linear-gradient(180deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2{
+    margin-bottom: 30px;
+}
+
+.sidebar a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.sidebar a:hover{
+    background: rgba(255,255,255,0.2);
+}
+
+.active{
+    font-weight: bold;
+}
+
+/* LOGO */
+.login-logo{
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* CONTENIDO PRINCIPAL */
+.main{
+    margin-left: 240px;
+    padding: 30px;
+}
+
+.main h1{
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* TARJETAS (UNIFICADAS) */
+.cards{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.card{
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 200px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card h3{
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p{
+    font-size: 26px;
+    font-weight: bold;
+    color: #2d4c83;
+}
+
+/* FORMULARIOS */
+.form-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #3a7bd5;
+}
+
+/* BOTONES */
+button {
+    padding: 10px 15px;
+    background: #3a7bd5;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2a5298;
+}
+
+/* TABLAS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    background: #3a7bd5;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* TEXTAREA */
+textarea {
+    resize: none;
+}
+.card{
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Mejorar tabla */
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Espacio interno */
+th, td{
+    padding: 12px;
+    text-align: center;
+}
+
+/* Inputs más cómodos */
+td input{
+    width: 90%;
+    padding: 8px;
+}
+
+/* Botones en columna (uno debajo del otro) */
+td button{
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+}
+
+/* Evitar que todo se comprima */
+td{
+    min-width: 120px;
+}
+
+/* Columna acciones más ancha */
+td:last-child{
+    min-width: 150px;
+}
+
+.top-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    background: linear-gradient(90deg, #050c1a, #2a5298);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.15);
+}
+.burger-menu {
+    cursor: pointer;
+    line-height: 1;
+    font-size: 24px;}
+
+.logo-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 22px;
+    align-items: center;    
+    justify-content: center; 
+    height: 100%;           
+}
+
+.icon {
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.icon:hover {
+    opacity: 0.7;
+}
+
+/* Ajuste necesario para los archivos existentes */
+.sidebar { top: 60px; }
+.main { margin-top: 60px; }
+
+.footer {
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

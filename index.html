@@ -3,23 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <title>Login</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="estilo.css">
 <link rel="shortcut icon" href="rayo.png" type="img/png" sizes="16x16">
 </head>
 
 <body class="login">
+<header class="top-header">
+    <div class="logo-name">Deportes Zambrano</div>
+    <div class="header-icons">
+        <span class="icon search-icon">&#128269;</span>
+        <span class="icon burger-menu">&#9776;</span>
+    </div>
+</header>
 
-<form action="dashboard.html" class="login-card">
+<form id="login-form" class="login-card">
 <img src="rayo.png" alt="Logo">
     <h2>Deportes Zambrano</h2>
     <p>Sistema de Inventario</p>
 
-    <input type="text" placeholder="Usuario" required minlength="8" maxlength="25">
-    <input type="password" placeholder="Contraseña" required minlength="8" maxlength="25">
-
-
+    <input id="correo-login" type="email" placeholder="Correo electrónico" required minlength="8" maxlength="25">
+    <input id="password-login" type="password" placeholder="Contraseña" required minlength="8" maxlength="25">
+   
     <button type="submit">Iniciar sesión</button>
+    <p id="login-error" class="login-error"></p>
 </form>
-
+<footer class="footer">
+    <p>&copy; 2026 Deportes Zambrano.</p>
+</footer>
+<script src="index.js"></script>
 </body>
+
 </html>
